@@ -8,7 +8,7 @@ def findFactors(cur):
     if len(factors) == 1:
         cur.left = TreeNode(factors[0])
         cur.right = TreeNode(factors[0])
-        return cur
+        return
 
     if len(factors) > 0:
         boundary = int((len(factors) + 1) / 2)
@@ -18,4 +18,4 @@ def findFactors(cur):
         findFactors(cur.left)
         findFactors(cur.right)
 
-    return cur
+    return

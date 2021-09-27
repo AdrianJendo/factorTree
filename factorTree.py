@@ -1,11 +1,13 @@
 import sys
 from tree.treeNode import TreeNode
 from helpers.findFactors import findFactors
+from helpers.printTree import printTree
+from helpers.findWidth import findWidth
 
 
-def printFactorTree():
+def factorTree():
     # num = int(sys.argv[1])
-    num = -72
+    num = 72
     root = TreeNode(num)
     cur = root
 
@@ -15,14 +17,10 @@ def printFactorTree():
         cur = root.right
 
     findFactors(cur)
+    width = findWidth(root)
 
-    # print(factors)
-    # return factors
-
-    # while num > 1:
-
-    print(root)  # Responsible for printing the tree to console
+    printTree(root, width)  # Responsible for printing the tree to console
     return root
 
 
-printFactorTree()
+factorTree()

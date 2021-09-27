@@ -1,6 +1,3 @@
-from helpers.printTree import printTree
-
-
 class TreeNode:
     def __init__(self, val=None):
         self.val = val
@@ -8,4 +5,4 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return printTree(self)
+        return self.val
