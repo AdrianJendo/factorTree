@@ -16,10 +16,10 @@ def factorTree():
         root.right = TreeNode(-1 * root.val)
         cur = root.right
 
-    findFactors(cur)
+    height = findFactors(cur)
     width = findWidth(root)
 
-    printTree(root, width)  # Responsible for printing the tree to console
+    printTree(root, width, height)  # Responsible for printing the tree to console
     return root
 
 
