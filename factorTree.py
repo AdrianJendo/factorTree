@@ -1,6 +1,10 @@
 import sys
 from tree.treeNode import TreeNode
 
+# Use
+#   alias factorTree='cd ~ && cd rootdir-scripts && cd factorTree && f(){pipenv run python3 factorTree.py "$1"; unset -f f; cd ~;}; f'
+# to run from terminal
+
 
 def createFactorTree():
     num = int(sys.argv[1])
